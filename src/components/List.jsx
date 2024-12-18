@@ -1,4 +1,3 @@
-import folderOpenSvg from '../assets/folder_open.svg'
 import fileSvg from '../assets/file.svg'
 import folderSvg from '../assets/folder_closed.svg'
 import trashSvg from '../assets/trash.svg'

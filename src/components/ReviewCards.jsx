@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import exitSvg from '../assets/x.svg';
 
 function ReviewCards({isReviewModalOpen, openReviewModal, filteredCards, changeCardState}) {
