@@ -27,7 +27,7 @@ function ReviewCards({isReviewModalOpen, openReviewModal, filteredCards, changeC
 
     return (
         (isReviewModalOpen && filteredCards.length !== 0) &&
-        <div className="fixed top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center bg-slate-800 text-white">
+        <div className="z-30 fixed top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center bg-slate-800 text-white">
             <h1 className="text-2xl md:text-4xl">{showTheAnswer ? currentCards[currentItem].backSide : currentCards[currentItem].frontSide}</h1>
             <span className="fixed top-4 right-4 h-6 w-6 cursor-pointer" onClick={() => {openReviewModal(); closeModal(); }}><img src={exitSvg} alt="exit" /></span>
             {!showTheAnswer && 
