@@ -11,7 +11,7 @@ function Topbar({onClick, sidebarOpen}) {
         }
     }, [sidebarOpen])
     return (
-    <div className="bg-slate-800 p-4 text-white flex flex-row gap-4 items-center">
+    <div className="z-10 bg-slate-800 p-4 text-white flex flex-row gap-4 items-center sticky top-0 md:static">
         <span onClick={onClick} className="md:hidden"><img src={barSvg} alt="menu" className="h-6 w-6 cursor-pointer duration-300" ref={menuIcon} /></span>
         <h1 className="text-xl md:text-2xl">Flashcards App</h1>
     </div>);

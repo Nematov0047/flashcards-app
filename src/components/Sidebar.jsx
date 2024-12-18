@@ -16,7 +16,7 @@ function Sidebar({sidebarOpen, dataStructure, openFolder, currentPWD, backFolder
     }, [sidebarOpen]);
 
     return (
-        <div className="z-10 flex flex-col min-h-screen overflow-clip bg-slate-800 w-60 absolute md:static text-white duration-300 ease-in-out shadow-slate-950 shadow-xl md:shadow-none" ref={sidebar}>
+        <div className="z-10 flex flex-col h-full overflow-y-auto bg-slate-800 w-60 fixed md:static text-white duration-300 ease-in-out shadow-slate-950 shadow-xl md:shadow-none" ref={sidebar}>
             <div className="flex flex-row gap-4 border-b-2 border-b-slate-200 p-2">
                 <span><img src={newFileSvg} alt="new file" className="h-6 w-6 cursor-pointer" title="new file" onClick={() =>{createFolderOrFile('file')}} /></span>
                 <span><img src={newFolderSvg} alt="new folder" className="h-6 w-6 cursor-pointer" title="new folder" onClick={() => {createFolderOrFile('folder')}} /></span>
